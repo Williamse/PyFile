@@ -10,6 +10,7 @@ class file:
     _name = 'Unkown';
     _owner= 'Unkown';
     _parent = 'Unkown';
+
     def __init__(self,path):
         _extension = 'Unkown';
         _name = 'Unknown';
