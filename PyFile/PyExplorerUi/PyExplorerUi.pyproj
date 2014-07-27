@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0fba472e-aafb-411a-8aee-3cad99497d0b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyExplorerUi.py</StartupFile>
+    <StartupFile>Views\PyExplorerUi.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyExplorerUi.py" />
+    <Compile Include="Views\PyExplorerUi.py" />
+    <Compile Include="ViewModels\TreeViewModel.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PyExplorerUi.xaml">
@@ -52,6 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
