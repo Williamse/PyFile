@@ -35,7 +35,7 @@ class Directory:
 
     def __init__(self,path):
         parent_filename = str.rsplit(path,'\\',1);
-
+        self._path = path;
         self._parent = parent_filename[0];
         self._name = parent_filename[1];
         self._directory =[];
